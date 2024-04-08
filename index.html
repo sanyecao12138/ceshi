@@ -105,15 +105,34 @@
 		      color: black; 
 		  }
 		  
+.filter-section {
+    bottom: auto; /* 不再需要设置 bottom 属性 */
+    left: 5px;
+    z-index: 2;
+    background: white;
+    padding: 10px;
+    position: absolute; /* 将 position 修改为 absolute */
+    top: calc(100% + 20px); /* 设置在 .action-buttons-container 下方 20px 的位置 */
+}
+
+.filter-section .filter-title { 
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-section select {
+    margin-bottom: 5px;
+    display: block;
+}		  
 		  
-		  
-		.filter-section {
+		/* .filter-section {
 		   bottom: 150px; 
 		     left: 10px;
 		     z-index: 2;
 		     background: white;
 		     padding: 10px;
-		     position: fixed; 
+		     position: absolute;
 		
 		}
 		
@@ -128,7 +147,7 @@
 		    display: block;
 		}
 		
-
+ */
     </style>
 </head>
 <body>
